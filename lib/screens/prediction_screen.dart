@@ -87,7 +87,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: national_invFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.nationalInv = double.tryParse(value);
+                  _backOrderPredictionModel.nationalInv = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -101,7 +101,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: lead_timeFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.leadTime = double.tryParse(value);
+                  _backOrderPredictionModel.leadTime = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -115,7 +115,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: in_transit_qtyFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.inTransitQty = double.tryParse(value);
+                  _backOrderPredictionModel.inTransitQty = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -129,7 +129,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: forecast_3_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.forecast3Month = double.tryParse(value);
+                  _backOrderPredictionModel.forecast3Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -143,7 +143,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: forecast_6_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.forecast6Month = double.tryParse(value);
+                  _backOrderPredictionModel.forecast6Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -156,7 +156,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: forecast_9_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.forecast9Month = double.tryParse(value);
+                  _backOrderPredictionModel.forecast9Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -169,7 +169,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: sales_1_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.sales1Month = double.tryParse(value);
+                  _backOrderPredictionModel.sales1Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -181,7 +181,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: sales_3_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.sales3Month = double.tryParse(value);
+                  _backOrderPredictionModel.sales3Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -193,7 +193,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: sales_6_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.sales6Month = double.tryParse(value);
+                  _backOrderPredictionModel.sales6Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -205,7 +205,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: sales_9_monthFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.sales9Month = double.tryParse(value);
+                  _backOrderPredictionModel.sales9Month = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -217,7 +217,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: min_bankFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.minBank = double.tryParse(value);
+                  _backOrderPredictionModel.minBank = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -229,7 +229,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: pieces_past_dueFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.piecesPastDue = double.tryParse(value);
+                  _backOrderPredictionModel.piecesPastDue = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -241,7 +241,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: perf_6_month_avgFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.perf6MonthAvg = double.tryParse(value);
+                  _backOrderPredictionModel.perf6MonthAvg = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -253,7 +253,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: perf_12_month_avgFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.perf12MonthAvg = double.tryParse(value);
+                  _backOrderPredictionModel.perf12MonthAvg = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -267,7 +267,7 @@ class _PredictionScreenState extends State<PredictionScreen> {
                 focusNode: local_bo_qtyFocusNode,
                 input: TextInputType.number,
                 onSaved: (String value){
-                  _backOrderPredictionModel.localBoQty = double.tryParse(value);
+                  _backOrderPredictionModel.localBoQty = double.tryParse(value.trim() == '' ? '0.0' : value.trim());
                 },
                 enabled: enabeled,
               ),
@@ -426,13 +426,48 @@ class _PredictionScreenState extends State<PredictionScreen> {
         apiCall =true;
         enabeled = false;
       });
-      showDialog(context: context, builder: (context)=>Image.asset('assets/think.gif'));
+      showDialog(context: context, builder: (context)=>Image.asset('assets/think.gif'), barrierDismissible: false);
       print(_backOrderPredictionModel.toJson());
       final resp = await predictionRepository.predictBacOrder(_backOrderPredictionModel);
       print(resp['went_on_backorder']);
+      Navigator.pop(context);
+      showDialogBox(resp['went_on_backorder']);
       setState(() {
         apiCall = false;
         enabeled = true;
       });
+  }
+
+  void showDialogBox(bool resp) {
+    showGeneralDialog(
+      barrierLabel: "Barrier",
+      barrierDismissible: true,
+      barrierColor: Colors.black.withOpacity(0.5),
+      transitionDuration: Duration(milliseconds: 700),
+      context: context,
+      pageBuilder: (_, __, ___) {
+        return Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            height: 300,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('Goes to Back Order: $resp', style: TextStyle(color: Colors.green),),
+            ),
+            margin: EdgeInsets.only(bottom: 50, left: 12, right: 12),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(40),
+            ),
+          ),
+        );
+      },
+      transitionBuilder: (_, anim, __, child) {
+        return SlideTransition(
+          position: Tween(begin: Offset(0, 1), end: Offset(0, 0)).animate(anim),
+          child: child,
+        );
+      },
+    );
   }
 }
